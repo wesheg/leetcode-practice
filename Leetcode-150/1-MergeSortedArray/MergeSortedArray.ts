@@ -17,7 +17,7 @@
  */
 
 function merge(nums1: number) {
-  console.log('test')
+  console.log('test');
 }
 
 merge(1);

@@ -26,32 +26,17 @@
  */
 
 function merge(nums1: number[], m: number, nums2: number[], n: number): void {
-  let i = m - 1;
-  let j = n - 1;
-  let k = m + n - 1;
-  while (i >= 0 && j >= 0) {
-    const n1 = nums1[i];
-    const n2 = nums2[j];
-    if (n1 > n2) {
-      nums1[k] = n1;
-      i--;
-    } else {
-      nums1[k] = n2;
-      j--;
+  let pointer1 = m - 1;
+  let pointer2 = n - 1;
+
+  for (let i = m + n - 1; i >= 0; i--) {
+    if (pointer1 >= 0 && nums1[pointer1] > nums2[pointer2]) {
+      nums1[i] = nums1[pointer1];
+      pointer1--;
+    } else if (pointer2 >= 0) {
+      nums1[i] = nums2[pointer2];
+      pointer2--;
     }
-    k--;
-  }
-
-  while (j >= 0) {
-    nums1[k] = nums2[k];
-    j--;
-    k--;
-  }
-
-  while (i >= 0) {
-    nums1[k] = nums1[i];
-    i--;
-    k--;
   }
 }
 

@@ -1,11 +1,11 @@
 {
-    "compilerOptions": {
-      "target": "ES5",
-      "module": "system",
-      "noImplicitAny": true,
-      "removeComments": true,
-      "preserveConstEnums": true,
-      "sourceMap": true,
-      "outFile": "built/main.js"
-    }
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "system",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "outFile": "built/main.js"
   }
+}

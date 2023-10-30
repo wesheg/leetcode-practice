@@ -1,19 +1,15 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true
-    },
-    "extends": [
-        "standard-with-typescript",
-        "plugin:prettier/recommended"
-    ],
-    "overrides": [
-    ],
-    "plugins": ["prettier"],
-    "parserOptions": {
-        "ecmaVersion": "latest"
-    },
-    "rules": {
-        "prettier/prettier": "error"
-    }
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["standard-with-typescript", "plugin:prettier/recommended"],
+  "overrides": [],
+  "plugins": ["prettier"],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "rules": {
+    "prettier/prettier": "error"
+  }
 }

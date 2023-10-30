@@ -13,16 +13,14 @@
  *
  * My Solution:
  * ------------
- * use 3 pointers: i, j, and k
- * start from the back of each list
- * i = m-1
- * j = n-1
- * k = (m+n-1)
+ * start from the back of the nums1 array
+ * start 2 pointers, one for nums1 and the other for nums2
+ * decrement the pointer from the back of the array, comparing
+ * numbers from both arrays and placing the larger one in the
+ * current spot.
  *
- * compare two numbers at i and j
- * put the larger of the two at position k
- * decrement each pointer
- * continue until m and n both = 0
+ * Time Complexity: O(m + n)
+ * Space Complexity: O(1)
  */
 
 function merge(nums1: number[], m: number, nums2: number[], n: number): void {
